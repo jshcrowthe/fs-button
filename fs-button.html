@@ -1,0 +1,52 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- @demo demo/index.html -->
+
+<dom-module id='fs-button'>
+  <link rel="import" type="css" href="styles.css">
+  <template>
+    <content></content>
+  </template>
+</dom-module>
+<script>
+(function() {
+  Polymer({
+    is: 'fs-button',
+    extends: 'button',
+    properties: {
+      /**
+       * If provided the button will render a spinner until
+       * the attribute is removed. 
+       * @type {Boolean}
+       */
+      loading: {
+        type: Boolean,
+        value: false,
+        reflectToAttribute: true
+      },
+      /**
+       * If provided this will render a different style of button (based
+       * upon input). 
+       *
+       * Possible Values: `recommended`, `minor`
+       * @type {String}
+       */
+      option: {
+        type: String,
+        reflectToAttribute: true
+      },
+      /**
+       * If provided this will render different sizes of button (based
+       * on input).
+       *
+       * Possible Values: `large`, `small`
+       * @type {String}
+       */
+      size: {
+        type: String,
+        reflectToAttribute: true
+      }
+    }
+  });
+})();
+</script>

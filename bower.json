@@ -3,7 +3,7 @@
   "authors": [
     "Josh Crowther <jshcrowthe@gmail.com>"
   ],
-  "description": "A button from the fs-styleguide",
+  "description": "A type extension element for button from the FamilySearch styleguide",
   "main": "fs-button.html",
   "moduleType": [],
   "keywords": [
@@ -17,6 +17,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "/demo"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.1.5"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~1.0.6"
+  }
 }
