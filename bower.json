@@ -1,0 +1,22 @@
+{
+  "name": "fs-button",
+  "authors": [
+    "Josh Crowther <jshcrowthe@gmail.com>"
+  ],
+  "description": "A button from the fs-styleguide",
+  "main": "fs-button.html",
+  "moduleType": [],
+  "keywords": [
+    "button",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
