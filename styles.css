@@ -66,6 +66,22 @@
 :host([option=recommended]):visited {
   color: #fff; /* [2] */
 }
+:host([option=destructive]) {
+  background-color: #cc3227;
+  color: #fff;
+}
+:host([option=destructive]):hover {
+/* [3] */
+  background: #e64034;
+  color: #fff;
+}
+:host([option=destructive]):active {
+  background-color: #af180d;
+}
+:host([option=destructive]):focus,
+:host([option=destructive]):visited {
+  color: #fff; /* [2] */
+}
 :host([option=minor]) {
   background: transparent;
   color: #0060d7;
