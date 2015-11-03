@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 
+<<<<<<< 87a00d07f0917915b5fbf4bb912d707ee8073367
 <!-- @demo demo/index.html -->
 
 <dom-module id='fs-button'>
@@ -11,6 +12,30 @@
 <script>
 (function() {
   Polymer({
+=======
+<!--
+  This element extends the button element with three attributes you can use to specify the characteristics of the button.
+  
+  Example:
+
+    <button is='fs-button' size='large' option='recommended'>Click</button>
+
+@group Seed Elements
+@element fs-button
+@demo demo/index.html
+-->
+<dom-module id="fs-button">
+   <link rel="import" type="css" href="fs-button.css">
+  <template>
+    <content></content>
+  </template>
+
+</dom-module>
+
+<script>
+
+ Polymer({
+>>>>>>> Initial commit
     is: 'fs-button',
     extends: 'button',
     properties: {
@@ -48,5 +73,10 @@
       }
     }
   });
+<<<<<<< 87a00d07f0917915b5fbf4bb912d707ee8073367
 })();
 </script>
+=======
+
+</script>
+>>>>>>> Initial commit

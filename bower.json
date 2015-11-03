@@ -1,5 +1,6 @@
 {
   "name": "fs-button",
+<<<<<<< 87a00d07f0917915b5fbf4bb912d707ee8073367
   "authors": [
     "Josh Crowther <jshcrowthe@gmail.com>"
   ],
@@ -27,3 +28,29 @@
     "iron-component-page": "PolymerElements/iron-component-page#~1.0.6"
   }
 }
+=======
+  "version": "1.0.3",
+  "authors": [
+    "Anonymous <anonymous@example.com>"
+  ],
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "fs-button.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  }
+}
+>>>>>>> Initial commit
