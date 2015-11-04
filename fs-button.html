@@ -1,16 +1,25 @@
 <link rel="import" href="../polymer/polymer.html">
+<!--
+  This element extends the button element with three attributes you can use to specify the characteristics of the button.
+  
+  Example:
 
-<!-- @demo demo/index.html -->
+    <button is='fs-button' size='large' option='recommended'>Click</button>
 
-<dom-module id='fs-button'>
-  <link rel="import" type="css" href="styles.css">
+@group Seed Elements
+@element fs-button
+@demo demo/index.html
+-->
+<dom-module id="fs-button">
+   <link rel="import" type="css" href="fs-button.css">
   <template>
     <content></content>
   </template>
+
 </dom-module>
+
 <script>
-(function() {
-  Polymer({
+ Polymer({
     is: 'fs-button',
     extends: 'button',
     properties: {
@@ -48,5 +57,5 @@
       }
     }
   });
-})();
 </script>
+
