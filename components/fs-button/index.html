@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>&lt;fs-button&gt; Component</title>
+  <script src='../../webcomponentsjs/webcomponents-lite.min.js'></script>
+  <link rel="import" href="../fs-button.html">
+  <script>
+    if ('createShadowRoot' in HTMLElement.prototype) {
+      window.Polymer = window.Polymer || { dom: 'shadow' }
+    }
+  </script>
+</head>
+<body>
+  <template is='dom-bind' id='demo'>
+    <div>
+      <p for="">Options</p>
+      <button is='fs-button' option='recommended'>Recommended</button>
+      <button is='fs-button'>Default</button>
+      <button is='fs-button' option='minor'>Minor</button>
+    </div>
+    <div>
+      <p for="">Sizes</p>
+      <button is='fs-button' size='large'>Large</button>
+      <button is='fs-button'>Default</button>
+      <button is='fs-button' size='small'>Small</button>
+    </div>
+    <div>
+      <p for="">Disabled</p>
+      <button is='fs-button' option='recommended' disabled>Recommended</button>
+      <button is='fs-button' disabled>Default</button>
+    </div>
+    <div>
+      <p for="">Loading</p>
+      <button is='fs-button' option='recommended' on-click='toggleLoading' loading="{{loading}}">Recommended</button>
+      <button is='fs-button' on-click='toggleLoading' loading="{{loading}}">Default</button>
+      <button is='fs-button' disabled on-click='toggleLoading' loading="{{loading}}">Disabled</button>
+      <button is='fs-button' option='minor' on-click='toggleLoading' loading="{{loading}}">Minor</button>
+    </div>
+  </template>
+  <script>
+  var demo = document.querySelector('#demo');
+  demo.loading = false;
+  demo.toggleLoading = function() {
+    demo.loading = !demo.loading;
+  }
+  </script>
+</body>
+</html>
