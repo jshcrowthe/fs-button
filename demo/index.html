@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>&lt;fs-button&gt; Component</title>
-  <script src='../../webcomponentsjs/webcomponents.min.js'></script>
+  <script src='../../webcomponentsjs/webcomponents-lite.min.js'></script>
   <link rel="import" href="../fs-button.html">
   <script>
+    if ('createShadowRoot' in HTMLElement.prototype) {
       window.Polymer = window.Polymer || { dom: 'shadow' }
+    }
   </script>
 </head>
 <body>
