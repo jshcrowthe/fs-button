@@ -49,11 +49,6 @@
   text-decoration: none;
   outline-offset: 2px; /* [4] */
 }
-:host([loading]:after) {
-  content: '';
-  opacity: 0;
-  transition: opacity 0.3s;
-}
 :host([option=recommended]) {
   background-color: #3073dd;
   border: 1px solid #246bdb;
@@ -179,7 +174,7 @@
   padding-right: 47px;
 }
 
-:host([loading]:after) {
+:host([loading]):after {
   background-size: contain;
   height: 20px;
   margin-top: -2px;
