@@ -28,8 +28,9 @@
   color: #333331;
   text-decoration: none;
 }
-:host:hover:disabled,
-:host:hover.disabled {
+
+:host:disabled:hover,
+:host([disabled]):hover {
   background-color: #f5f4f1;
   color: rgba(51,51,49,0.3);
   text-decoration: none;
@@ -134,9 +135,11 @@
 }
 
 :host:disabled,
-:host.disabled,
-:host([option=recommended]):disabled:hover,
-:host([option=recommended]).disabled:hover {
+:host([disabled]),
+:host([option=recommended]):disabled,
+:host([option=recommended][disabled]),
+:host([option=recommended]):disabled:hover
+:host([option=recommended][disabled]):hover {
   cursor: not-allowed;
   background-color: #f5f4f1;
   border: 1px solid #cbc6b9;
