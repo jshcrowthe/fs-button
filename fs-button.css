@@ -103,6 +103,63 @@
 :host([option=minor]):visited {
   color: #0060d7; /* [2] */
 }
+
+:host([option=close]) {
+  -webkit-appearance: none;
+  -webkit-touch-callout: none;
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 0 transparent;
+  color: transparent;
+  height: 20px;
+  height: 1.25rem;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  width: 1.25rem;
+/* [1] */
+}
+:host([option=close]):before,
+:host([option=close]):after {
+  background-color: #a8a8a8;
+  border-radius: 4px;
+  content: '';
+  height: 2px;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: none;
+  width: 0.75rem;
+  width: 12px;
+  -webkit-transform: translateY(-50%);
+}
+:host([option=close]):before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+:host([option=close]):after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+:host([option=close]):hover:before,
+:host([option=close]):focus:before,
+:host([option=close]):hover:after,
+:host([option=close]):focus:after {
+  background-color: #333331;
+}
+:host([option=close]):active:before,
+:host([option=close]):active:after {
+  background-color: #6f6f6f;
+}
+
 :host([size=large]) {
   border-radius: 5px;
   padding: 16px 20px !important;
